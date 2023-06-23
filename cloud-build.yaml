@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/cohort-389109/cohort:$SHORT_SHA', '.' ]
+images:
+- 'gcr.io/cohort-389109/cohort:$SHORT_SHA'
+- 'gcr.io/cohort-389109/cohort:latest'
