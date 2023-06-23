@@ -56,3 +56,4 @@ RUN apt-get clean -y && apt-get autoremove -y && apt-get autoclean -y && rm -rf 
 USER "${USERNAME}"
 
 CMD ["/bin/bash"]
+
